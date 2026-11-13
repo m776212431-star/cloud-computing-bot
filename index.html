@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Bot</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            color: #333;
+        }
+
+        p {
+            text-align: center;
+            color: #666;
+        }
+
+        df-messenger {
+            --df-messenger-bot-message: #e8f0fe;
+            --df-messenger-button-titlebar-color: #ff9800;
+            --df-messenger-chat-background: #ffffff;
+            --df-messenger-font-color: #222;
+            --df-messenger-send-icon: #ff9800;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Cloud Computing Bot</h1>
+    <p>Welcome! Ask me anything about Cloud Computing.</p>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+    <df-messenger
+        intent="WELCOME"
+        chat-title="CloudComputingBot"
+        agent-id="6c98cbb1-c16f-4bc8-92dd-e73dfae88ff2"
+        language-code="en">
+    </df-messenger>
+
+</body>
+</html>
